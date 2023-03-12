@@ -17,7 +17,7 @@ body {
     padding-top: 1%;
     padding-bottom: 1%;
 
-    color: blue;
+    color: #00BFFF;
 }
 
 .tab__plus {
@@ -151,3 +151,13 @@ body {
         font: bold 2rem Roboto Serif;
     }
 }
+
+label:active > .tab__img {
+    filter: invert(1);
+}
+
+label {
+    cursor: pointer;
+    transition: 0.4s;
+}
+
