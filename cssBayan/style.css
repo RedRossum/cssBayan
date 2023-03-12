@@ -1,0 +1,74 @@
+
+.wrapper {
+    max-width: 80%;
+    margin: auto;
+}
+
+.tab__img {
+    display: block;
+    width: 60vw;
+    margin: auto;
+
+    visibility: hidden;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.img0 {
+    background-image: url(img/0.jpg);
+}
+
+.img1 {
+    background-image: url(img/1.jpg);
+}
+
+.img2 {
+    background-image: url(img/2.jpg);
+}
+
+.img3 {
+    background-image: url(img/3.jpg);
+}
+
+.img4 {
+    background-image: url(img/4.jpg);
+}
+
+.img5 {
+    background-image: url(img/5.jpg);
+}
+
+.tab__plus {
+    background-image: url(img/plus.png);
+
+    display: block;
+    width: 2rem;
+    height: 2rem;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.tab {
+    border-top: 0.0001rem solid grey;
+}
+
+.tab:has(input:checked) .tab__plus {
+    transform: rotate(45deg);
+    transition: transform 0.4s;
+}
+
+.tab:has(input:checked) .tab__img {
+    height: 40vh;
+    visibility: visible;
+}
+
+.tab__title-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
